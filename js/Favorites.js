@@ -13,7 +13,7 @@ export class Favorites {
 
 
       if(userName === '') {
-        throw new Error("Digite o nome do usuário no botão")
+        throw new Error("O nome do usuário não pode ser vazio ")
       }
       if (userExisted) {
         throw new Error("Usuário já existe")
