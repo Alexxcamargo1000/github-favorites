@@ -11,7 +11,6 @@ export class Favorites {
       const user = await GithubUser.findUser(userName);
       const userExisted = this.entries.find((user) => user.login === userName);
 
-
       if(userName === '') {
         throw new Error("O nome do usuário não pode ser vazio ")
       }
